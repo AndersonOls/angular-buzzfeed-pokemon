@@ -1,0 +1,38 @@
+<div class="quiz_container w-4/5 m-auto mt-5">
+    <div class="quizz_logo flex flex-col 
+    justify-center items-center mb-3">
+        <img src="https://marcas-logos.net/wp-content/uploads/2020/02/Pokemon-logo.png" alt=""
+        class="w-60">
+        <h3 class="mt-5 text-xl">{{title}}</h3>
+    </div>
+
+    <div *ngIf="!finished" class="flex justify-center 
+    items-center border border-solid 
+    border-custom_blue rounded-lg
+    w-full h-52 text-xl font-sans
+    bg-red-600 mb-5 font-bold">
+        <h3>{{questionSelected.question}}</h3>
+    </div>
+
+    <div *ngIf="!finished" class="quiz_options flex flex-wrap justify-center
+    m-auto mb-5">
+        <button
+        *ngFor="let option of questionSelected.options; let i = index"
+        (click)="playerChose(option.alias)"
+        class="btn-option bg-transparent rounded-lg
+        border border-solid border-white w-1/2
+        text-white font-semibold font-sans text-base py-4 px-8
+        hover:bg-yellow-300
+        active:relative top-[1px]"
+    >
+        {{option.name}}
+    </button>
+    </div>
+
+    <div *ngIf=finished class="quiz_results w-full h-[350px] bg-red-500
+    rounded-xl flex flex-col justify-center items-center text-xl">
+       <h1>O seu resultado é:</h1>
+       <p>{{answerSelected}}</p>
+       <img src="{{ photo }}" alt="" class="w-[200px]">
+    </div>
+</div>
