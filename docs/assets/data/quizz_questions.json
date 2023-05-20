@@ -1,0 +1,63 @@
+{
+    "title":"Qual dos 4 Pokemons iniciais você seria?",
+    "questions":[
+      {
+        "id":1,
+        "question": "Qual super poder você escolheria ?",
+        "options":[
+          {"id": 1, "name":"Folhas de Navalha", "alias":"A"},
+          {"id": 2, "name":"Lança Chamas", "alias":"B"},
+          {"id": 3, "name":"Jato D'agua", "alias":"C"},
+          {"id": 4, "name":"Choque do Trovão", "alias":"D"}
+        ]
+      },
+      {
+        "id":2,
+        "question": "O que você prefere?",
+        "options":[
+          {"id": 1, "name":"Praia", "alias":"C"},
+          {"id": 2, "name":"Natureza", "alias":"A"},
+          {"id": 3, "name":"Um lugar quente", "alias":"B"},
+          {"id": 4, "name":"Nenhuma das alternativas", "alias":"D"}
+
+        ]
+      },
+      {
+        "id":3,
+        "question": "Qual cor você escolheria?",
+        "options":[
+          {"id": 1, "name":"Amarelo", "alias":"D"},
+          {"id": 2, "name":"Laranja", "alias":"C"},
+          {"id": 3, "name":"Verde", "alias":"A"},
+          {"id": 4, "name":"Azul", "alias":"B"}
+        ]
+      },
+      {
+        "id":4,
+        "question": "O que mais te assuta?",
+        "options":[
+          {"id": 1, "name":"Raios em dias chuvosos", "alias":"C"},
+          {"id": 2, "name":"Dias Frios", "alias":"A"},
+          {"id": 3, "name":"Uma tempestade", "alias":"B"},
+          {"id": 4, "name":"Um dia seco sem chuva", "alias":"D"}
+        ]
+      },
+      {
+        "id":5,
+        "question": "Você se sente forte quando...",
+        "options":[
+          {"id": 1, "name":"Mata um inseto", "alias":"B"},
+          {"id": 2, "name":"Apaga um incendio", "alias":"C"},
+          {"id": 3, "name":"Entra em uma piscina", "alias":"A"},
+          {"id": 5, "name":"Acerta um inseto voador", "alias":"B"}
+        ]
+      }
+    ],
+    "results":{
+      "A": "Você é o Bulbasaur!",
+      "B": "Você é o Charmander!",
+      "C": "Você é o Squirtle!",
+      "D": "Você é o Pikachu!"
+
+    }
+  }
